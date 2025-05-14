@@ -4,49 +4,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ip-stivi</title>
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-    header {
-      text-align: center;
-      padding: 2rem;
-    }
-    h1 {
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #666;
-    }
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
-<body>
-  <header>
-    <h1>👋 Hi, I'm ip-stivi</h1>
-    <p>Welcome to my personal site — more coming soon!</p>
+<body class="bg-light">
+
+  <header class="py-5 bg-white text-center shadow-sm">
+    <div class="container">
+      <h1 class="display-4">👋 Hi, I'm ip-stivi</h1>
+      <p class="lead text-muted">Building digital structure, one improvement at a time.</p>
+    </div>
   </header>
 
-  <footer>
+  <main class="container py-5">
+
+    <section class="mb-5">
+      <h2 class="mb-3">About Me</h2>
+      <p>
+        I'm passionate about improving IT operations, organizing data, and automating the boring stuff. This site is a work in progress — more to come soon.
+      </p>
+    </section>
+
+    <section class="mb-5">
+      <h2 class="mb-3">Projects</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>Project A</strong><br />
+          A placeholder description for a technical dashboard or process improvement initiative.
+        </li>
+        <li class="list-group-item">
+          <strong>Project B</strong><br />
+          Another sample entry for something automation-related or analytics-focused.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="mb-3">Contact</h2>
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>LinkedIn: <a href="#" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </section>
+
+  </main>
+
+  <footer class="bg-white text-center text-muted py-3 mt-5 border-top">
     &copy; <span id="year"></span> ip-stivi
   </footer>
 
   <script>
-    // Automatically update copyright year
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
